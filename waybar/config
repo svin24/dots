@@ -115,7 +115,7 @@
 	"network": {
 		"interval": 5,
 		"format-wifi": "  {essid} ({signalStrength}%)",
-		"format-ethernet": "󰊗 Ethernet",
+		"format-ethernet": " Ethernet",
 		"format-disconnected": "Disconnected",
 		"on-click": "alacritty --class NetworkTUI -e nmtui",
 		"on-click-right": "nm-connection-editor"
