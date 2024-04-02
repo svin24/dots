@@ -37,6 +37,16 @@ window#waybar {
 	padding: 0 2px;
 	color: #dcd7ba;
 }
+#workspaces button.active {
+	background-color: #dcd7ba;
+	color: #1f1f28;
+}
+#workspaces button:hover {
+	background: #dcd7ba;
+	color: #1f1f28;
+	border: #1f1f28;
+	padding: 0 3px;
+}
 /*
 #workspaces button.focused {
 	color: #7fb4ca;
