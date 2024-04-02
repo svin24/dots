@@ -61,13 +61,20 @@ window#waybar {
 	border: #090618;
 	padding: 0 3px;
 }*/
+/*
 #language{
 	color: #dcd7ba;
 }
 #bluetooth{	
-	color: #FF5D62;
+	color: #ff5d62;
 }
 #network{
+	color: #938aa9;
+}*/
+#language{
+	color: #ff5d62;
+}
+#bluetooth{	
 	color: #938aa9;
 }
 #pulseaudio {
