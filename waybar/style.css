@@ -24,8 +24,10 @@ window#waybar {
 #clock.3,
 #pulseaudio,
 #memory,
+#backlight,
 #network,
 #cpu,
+#power-profiles-daemon,
 #battery,
 #disk,
 #tray {
@@ -55,14 +57,20 @@ window#waybar {
 #memory {
 	color: #2aa198;
 }
-#network{
+#backlight{
 	color: #2aa198;
+}
+#network{
+	color: #6c71c4;
 }
 #cpu {
 	color: #6c71c4;
 }
-#battery {
+#power-profiles-daemon{
 	color: #859900;
+}
+#battery {
+	color: #b58900;
 }
 #disk {
 	color: #b58900;
@@ -71,8 +79,10 @@ window#waybar {
 #clock,
 #pulseaudio,
 #memory,
+#backlight,
 #network,
 #cpu,
+#power-profiles-daemon,
 #battery,
 #disk {
 	padding: 0 10px;

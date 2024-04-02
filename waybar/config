@@ -18,10 +18,16 @@
 	],
 	"modules-right": [
 		"custom/left-arrow-dark",
+		"network",
+		"custom/left-arrow-light",
+		"custom/left-arrow-dark",
 		"pulseaudio",
 		"custom/left-arrow-light",
 		"custom/left-arrow-dark",
-		"network",
+		"backlight",
+		"custom/left-arrow-light",
+		"custom/left-arrow-dark",
+		"power-profiles-daemon",
 		"custom/left-arrow-light",
 		"custom/left-arrow-dark",
 		"battery",
@@ -62,8 +68,8 @@
 		"tooltip": false
 	},
 	"pulseaudio": {
-		"format": "{icon} {volume:2}%",
-		"format-bluetooth": "{icon}  {volume}%",
+		"format": "{icon} {volume}%",
+		//"format-bluetooth": "{icon}  {volume}%",
 		"format-muted": "MUTE",
 		"format-icons": {
 			"headphones": "",
@@ -99,11 +105,31 @@
 			""
 		]
 	},
+	"backlight": {
+		"format": "{icon} {percent}%",
+		"format-icons": [
+			"",
+			""
+		]
+	},
 	"network": {
 		"interval": 5,
-		"format-wifi": "Wifi: {essid} ({signalStrength}%)",
-		"format-ethernet": "Ethernet",
-		"format-disconnected": "Disconnected"
+		"format-wifi": "  {essid} ({signalStrength}%)",
+		"format-ethernet": "󰊗 Ethernet",
+		"format-disconnected": "Disconnected",
+		"on-click": "alacritty --class NetworkTUI -e nmtui",
+		"on-click-right": "nm-connection-editor"
+	},
+	"power-profiles-daemon": {
+		"format": "{icon}",
+		"tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+		"tooltip": true,
+		"format-icons": {
+			"default": "",
+			"performance": "",
+			"balanced": "",
+			"power-saver": ""
+		}
 	},
 	"disk": {
 		"interval": 5,
