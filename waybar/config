@@ -19,6 +19,9 @@
 	],
 	"modules-right": [
 		"custom/left-arrow-dark",
+		"hyprland/language",
+		"custom/left-arrow-light",
+		"custom/left-arrow-dark",
 		"bluetooth",
 		"custom/left-arrow-light",
 		"custom/left-arrow-dark",
@@ -60,6 +63,15 @@
 	},
 	"hyprland/window": {
 		"format": " {}"
+	},
+	"hyprland/language": {
+		"format": " {}",
+		//"format": "{}",
+		//"min-length": 7,
+		"format-en": "US",
+		"format-gr": "GR",
+		//	"on-click": "hyprlandmsg 'input * xkb_switch_layout next'",
+		"tooltip": false
 	},
 	"clock#1": {
 		"format": "{:%a}",
@@ -145,8 +157,8 @@
 		"format-on": " On",
 		"format-off": " Off",
 		"format-disabled": " Disabled",
-		"format-connected": " {device_alias}",
-		"format-connected-battery": " {device_alias} {device_battery_percentage}%",
+		"format-connected": " Connected",
+		//"format-connected-battery": " {device_alias} {device_battery_percentage}%",
 		// "format-device-preference": [ "device1", "device2" ], // preference list deciding the displayed device
 		"tooltip-format": "{controller_alias}\t{controller_address}\n{num_connections} connected",
 		"tooltip-format-connected": "{controller_alias}\t{controller_address}\n{num_connections} connected\n{device_enumerate}",

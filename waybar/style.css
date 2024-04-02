@@ -23,6 +23,7 @@ window#waybar {
 #clock.1,
 #clock.2,
 #clock.3,
+#language,
 #bluetooth,
 #network,
 #pulseaudio,
@@ -60,6 +61,9 @@ window#waybar {
 	border: #090618;
 	padding: 0 3px;
 }*/
+#language{
+	color: #dcd7ba;
+}
 #bluetooth{	
 	color: #FF5D62;
 }
@@ -79,6 +83,7 @@ window#waybar {
 	color: #e6c384;
 }
 #clock,
+#language,
 #bluetooth,
 #network,
 #pulseaudio,
