@@ -3,9 +3,9 @@
     "position": "top",
     "height": 27,
     "modules-left": [
-        "hyprland/workspaces",
-        "hyprland/submap",
-        "hyprland/window"
+        "river/tags",
+        //        "river/mode",
+        "river/window"
     ],
     "modules-center": [],
     "modules-right": [
@@ -17,15 +17,15 @@
         "clock",
         "tray"
     ],
-    "hyprland/workspaces": {
-        "format": "{name}"
+    "river/tags": {
+        //"format": "{name}"
     },
-    "hyprland/submap": {
+    "river/mode": {
         "format": "{}",
         "max-length": 8,
         "tooltip": false
     },
-    "hyprland/window": {
+    "river/window": {
         "format": "{}",
         "max-length": 150
     },

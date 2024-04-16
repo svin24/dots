@@ -26,20 +26,20 @@ window#waybar {
 }
 
 
-#workspaces button {
+#tags button {
 	padding: 0px 8px 0px 8px; 
 	color: #888888;
 }
 
 
-#workspaces button.active { 
+#tags button.focused { 
 	padding: 0px 8px 0px 8px; 
 	background-color: #285577;
 	color: #ffffff;
 }
 
 
-#submap { 
+#mode { 
 	 background-color: #900000;
 	 color: #ffffff;
      padding: 0px 8px 0px 8px;

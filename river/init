@@ -14,7 +14,8 @@ nm-applet &
 #riverctl spawn "$HOME/.config/river/bar"
 
 # Note: the "Super" modifier is also known as Logo, GUI, Windows, Mod4, etc.
-riverctl map normal Super R spawn 'bemenu-run -c -i --fork -l 10 -W 0.3 --single-instance --fn "Noto Sans Mono 11"'
+riverctl map normal Super E spawn 'bemenu-run -c -i --fork -l 10 -W 0.3 --single-instance --fn "Noto Sans Mono 11"'
+riverctl map normal Super R spawn 'j4-dmenu-desktop --dmenu='bemenu -c -i --fork -l 10 -W 0.3 --single-instance --fn "IBM Plex Mono 12"''
 riverctl map normal Super Return spawn alacritty
 
 # Super+Q to close the focused view
