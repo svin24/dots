@@ -7,9 +7,11 @@
 #
 # See the river(1), riverctl(1), and rivertile(1) man pages for complete
 wlr-randr --output eDP-1 --mode 1920x1080 --pos 0,0 --output HDMI-A-1 --mode 1920x1080 --pos -1920,-600
-# waybar -c .config/waybarriver/config -s .config/waybarriver/style.css &
-riverctl spawn "$HOME/.config/river/status"
-riverctl spawn "$HOME/.config/river/bar"
+riverctl spawn "dbus-update-activation-environment SEATD_SOCK DISPLAY WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=river"
+waybar -c ~/.config/waybar/configriver -s ~/.config/waybar/styleriver.css &
+nm-applet &
+#riverctl spawn "$HOME/.config/river/status"
+#riverctl spawn "$HOME/.config/river/bar"
 
 # Note: the "Super" modifier is also known as Logo, GUI, Windows, Mod4, etc.
 riverctl map normal Super R spawn 'bemenu-run -c -i --fork -l 10 -W 0.3 --single-instance --fn "Noto Sans Mono 11"'
@@ -159,6 +161,7 @@ riverctl rule-add -app-id 'float*' -title 'foo' float
 riverctl rule-add -app-id "bar" csd
 
 riverctl input pointer-1739-52861-SYNA32B3:01_06CB:CE7D_Touchpad natural-scroll enabled
+riverctl input pointer-1739-52861-SYNA32B3:01_06CB:CE7D_Touchpad tap enabled
 # Set the default layout generator to be rivertile and start it.
 # River will send the process group of the init executable SIGTERM on exit.
 riverctl default-layout rivertile

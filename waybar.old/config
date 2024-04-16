@@ -1,0 +1,178 @@
+{
+	"layer": "top",
+	"position": "top",
+	"modules-left": [
+		"hyprland/workspaces",
+		"custom/right-arrow-dark",
+		"hyprland/window"
+	],
+	"modules-center": [
+		"custom/left-arrow-dark",
+		"clock#1",
+		"custom/left-arrow-light",
+		"custom/left-arrow-dark",
+		"clock#2",
+		"custom/right-arrow-dark",
+		"custom/right-arrow-light",
+		"clock#3",
+		"custom/right-arrow-dark"
+	],
+	"modules-right": [
+		"custom/left-arrow-dark",
+		//"hyprland/language",
+		//"custom/left-arrow-light",
+		//"custom/left-arrow-dark",
+		//"bluetooth",
+		//"custom/left-arrow-light",
+		//"custom/left-arrow-dark",
+		//"network",
+		//"custom/left-arrow-light",
+		//"custom/left-arrow-dark",
+		"pulseaudio",
+		//"custom/left-arrow-light",
+		//"custom/left-arrow-dark",
+		"backlight",
+		//"custom/left-arrow-light",
+		//"custom/left-arrow-dark",
+		"power-profiles-daemon",
+		//"custom/left-arrow-light",
+		//"custom/left-arrow-dark",
+		"battery",
+		"custom/left-arrow-light",
+		"custom/left-arrow-dark",
+		"tray"
+	],
+	"custom/left-arrow-dark": {
+		"format": "",
+		"tooltip": false
+	},
+	"custom/left-arrow-light": {
+		"format": "",
+		"tooltip": false
+	},
+	"custom/right-arrow-dark": {
+		"format": "",
+		"tooltip": false
+	},
+	"custom/right-arrow-light": {
+		"format": "",
+		"tooltip": false
+	},
+	"hyprland/workspaces": {
+		"format": "{name}"
+	},
+	"hyprland/window": {
+		"format": " {}"
+	},
+	"hyprland/language": {
+		"format": " {}",
+		//"format": "{}",
+		//"min-length": 7,
+		"format-en": "US",
+		"format-gr": "GR",
+		//	"on-click": "hyprlandmsg 'input * xkb_switch_layout next'",
+		"tooltip": false
+	},
+	"clock#1": {
+		"format": "{:%a}",
+		"tooltip": false
+	},
+	"clock#2": {
+		"format": "{:%H:%M}",
+		"tooltip": false
+	},
+	"clock#3": {
+		"format": "{:%m-%d}",
+		"tooltip": false
+	},
+	"pulseaudio": {
+		"format": "{icon} {volume}%",
+		//"format-bluetooth": "{icon}  {volume}%",
+		"format-muted": "MUTE",
+		"format-icons": {
+			"headphones": "",
+			"default": [
+				"",
+				""
+			]
+		},
+		"scroll-step": 5,
+		"on-click": "pamixer -t",
+		"on-click-right": "pavucontrol"
+	},
+	"memory": {
+		"interval": 5,
+		"format": "Mem {}%"
+	},
+	"cpu": {
+		"interval": 5,
+		"format": "CPU {usage:2}%"
+	},
+	"battery": {
+		"states": {
+			"good": 95,
+			"warning": 30,
+			"critical": 15
+		},
+		"format": "{icon} {capacity}%",
+		"format-icons": [
+			"",
+			"",
+			"",
+			"",
+			""
+		]
+	},
+	"backlight": {
+		"format": "{icon} {percent}%",
+		"format-icons": [
+			"",
+			""
+		]
+	},
+	"network": {
+		"interval": 5,
+		"format-wifi": " {signalStrength}%",
+		"format-ethernet": " Ethernet",
+		"format-disconnected": "Disconnected",
+		"on-click": "alacritty --class NetworkTUI -e nmtui",
+		"on-click-right": "nm-connection-editor",
+		"tooltip": true,
+		"tooltip-format-wifi": " {essid}\t({signalStrength}%)\nUp:{bandwidthUpBits}\tDown:{bandwidthDownBits}\n{ifname}\t\t{ipaddr}",
+		"tooltip-format-ethernet": " Ethernet\nUp:{bandwidthUpBits}\tDown:{bandwidthDownBits}\n{ifname}\t{ipaddr}"
+	},
+	"power-profiles-daemon": {
+		"format": "{icon}",
+		"tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+		"tooltip": true,
+		"format-icons": {
+			"default": " Default",
+			"performance": " Performance",
+			"balanced": " Balanced",
+			"power-saver": " Power Saver"
+		}
+	},
+	"bluetooth": {
+		"format": "",
+		"format-on": " On",
+		"format-off": " Off",
+		"format-disabled": " Disabled",
+		"format-connected": " Connected",
+		//"format-connected-battery": " {device_alias} {device_battery_percentage}%",
+		// "format-device-preference": [ "device1", "device2" ], // preference list deciding the displayed device
+		"tooltip-format": "{controller_alias}\t{controller_address}\n{num_connections} connected",
+		"tooltip-format-connected": "{controller_alias}\t{controller_address}\n{num_connections} connected\n{device_enumerate}",
+		"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+		"tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
+		"on-click": "blueman-manager"
+	},
+	"disk": {
+		"interval": 5,
+		"format": "Disk {percentage_used:2}%",
+		"path": "/"
+	},
+	"tray": {
+		"icon-size": 20
+	}
+}
+// vi:ft=jsonc
