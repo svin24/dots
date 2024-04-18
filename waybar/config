@@ -1,6 +1,6 @@
 {
     "layer": "top",
-    "position": "top",
+    "position": "bottom",
     "height": 27,
     "modules-left": [
         "hyprland/workspaces",
@@ -30,7 +30,7 @@
         "max-length": 150
     },
     "tray": {
-        "icon-size": 18,
+        "icon-size": 16,
         "spacing": 8
     },
     "clock": {
