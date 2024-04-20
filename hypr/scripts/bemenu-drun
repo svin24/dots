@@ -1,0 +1,2 @@
+#!/bin/sh
+j4-dmenu-desktop  --dmenu='bemenu -c -i --fork -l 10 -W 0.3 --single-instance --tf "#d0d0d0" --tb "#232323" --fb "#232323" --ff "#d0d0d0" --nb "#232323" --nf "#d0d0d0" --hb "#d0d0d0" --hf "#232323" --ab "#232323" --af "#d0d0d0" --cb "#d0d0d0" --fn "IBM Plex Mono 12"'

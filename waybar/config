@@ -9,7 +9,7 @@
     ],
     "modules-center": [],
     "modules-right": [
-        //       "network",
+        "network",
         "backlight",
         "pulseaudio",
         "power-profiles-daemon",
