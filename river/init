@@ -10,13 +10,13 @@ wlr-randr --output eDP-1 --mode 1920x1080 --pos 0,0 --output HDMI-A-1 --mode 192
 riverctl spawn "dbus-update-activation-environment SEATD_SOCK DISPLAY WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=river"
 riverctl spawn "gnome-keyring-daemon --start --components=secrets"
 riverctl spawn "swww-daemon" 
-riverctl spawn "~/.config/river/scripts/swww-random ~/Wallpapers/"
+riverctl spawn "~/.config/scripts/swww-random ~/Wallpapers/"
 mako &
 waybar &
 
 # Note: the "Super" modifier is also known as Logo, GUI, Windows, Mod4, etc.
-riverctl map normal Super E spawn '~/.config/river/scripts/bemenu-run'
-riverctl map normal Super R spawn '~/.config/river/scripts/bemenu-drun'
+riverctl map normal Super E spawn '~/.config/scripts/bemenu-run'
+riverctl map normal Super R spawn '~/.config/scripts/bemenu-drun'
 riverctl map normal Super Return spawn alacritty
 
 # Super+Q to close the focused view
