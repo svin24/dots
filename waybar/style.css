@@ -5,19 +5,19 @@
 
 
 window#waybar { 
-    background-color: #121212; 
-    color: #D0D0D0;    
+    background-color: #225877; 
+    color: #FFFFFF;    
 }
 
 
 .modules-left {
-	background-color: #121212;
+	background-color: #323232;
 	padding: 0px 0px 0px 0px;
 }
 
 
 .modules-right {
-	background-color: #121212;
+	background-color: #323232;
 	padding: 0px 0px 0px 0px;
 }
 
@@ -25,31 +25,51 @@ window#waybar {
 #workspaces {
 }
 
+#tags button {
+	padding: 0px 8px 0px 8px; 
+	color: #888888;
+}
+
+
+#tags button.focused { 
+	padding: 0px 8px 0px 8px; 
+	background-color: #285577;
+	color: #ffffff;
+}
+
+
+#mode { 
+	 background-color: #900000;
+	 color: #ffffff;
+     padding: 0px 8px 0px 8px;
+     border: 1px solid #2f343a;
+}
+
 
 #workspaces button {
 	padding: 0px 8px 0px 8px; 
-	color: #D0D0D0;
+	color: #FFFFFF;
 }
 
 
 #workspaces button.active { 
 	padding: 0px 8px 0px 8px; 
-	background-color: #4E4E4E;
-	color: #D0D0D0;
+	background-color: #285577;
+	color: #FFFFFF;
 }
 
 
 #submap { 
 	 background-color: #900000;
-	 color: #D0D0D0;
+	 color: #FFFFFF;
      padding: 0px 8px 0px 8px;
      border: 1px solid #2f343a;
 }
 
 
 #window {
-	 color: #D0D0D0;
-	 background-color: #121212;
+	 color: #FFFFFF;
+	 background-color: #285577;
      padding: 0px 8px 0px 8px;
 }
 
@@ -61,7 +81,7 @@ window#waybar.empty #window {
 
 
 window#waybar.empty {
-	background-color: #121212;
+	background-color: #323232;
 }
 
 #pulseaudio.bluetooth {
