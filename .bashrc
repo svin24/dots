@@ -4,10 +4,14 @@ prompt_color_force=true
 if [ -f /etc/bashrc ]; then
     . /etc/bashrc
 fi
-export GOPATH=$HOME/.go
+export GOPATH=$HOME/.local/share/go/
 
 # User specific environment
 PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+#PATH="$PATH:$HOME/.local/share/go/bin"
+PATH="$PATH:$HOME/.local/share/zig/"
+PATH="$PATH:$HOME/.cargo/bin"
+PATH="$PATH:$HOME/.npm-global/bin/"
 PATH="$PATH:/var/lib/flatpak/exports/bin/"
 PATH="$PATH:$GOPATH/bin"
 export PATH

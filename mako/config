@@ -1,2 +1,3 @@
 default-timeout=5000
-font=Noto Sans Mono 11
+font=IBM Plex Mono 11
+anchor=bottom-right
