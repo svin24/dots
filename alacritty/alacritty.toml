@@ -1,11 +1,45 @@
-import = [
-"~/.config/alacritty/themes/one_dark.toml",
-]
+[colors.bright]
+black = "#908E8F"
+blue = "#FC9867"
+cyan = "#78DCE8"
+green = "#A9DC76"
+magenta = "#AB9DF2"
+red = "#FF6188"
+white = "#FDF9F3"
+yellow = "#FFD866"
+
+[colors.normal]
+black = "#363537"
+blue = "#FC9867"
+cyan = "#78DCE8"
+green = "#A9DC76"
+magenta = "#AB9DF2"
+red = "#FF6188"
+white = "#FDF9F3"
+yellow = "#FFD866"
+
+[colors.primary]
+background = "#363537"
+foreground = "#FDF9F3"
 
 [font]
-normal = { family = "IBM Plex Mono",style = "Regular" }
-bold = { family = "IBM Plex Mono",style = "Bold" }
-italic = { family = "IBM Plex Mono",style = "Light" }
 size = 11.0
+
+[font.bold]
+family = "Hack"
+style = "Bold"
+
+[font.bold_italic]
+family = "Hack"
+style = "Bold Italic"
+
+[font.italic]
+family = "Hack"
+style = "Italic"
+
+[font.normal]
+family = "Hack"
+style = "Regular"
+
 [window]
 opacity = 1

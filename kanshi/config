@@ -1,0 +1,8 @@
+profile monolaptop {
+	output eDP-1 enable mode 1920x1080 position 0,0 scale 1.25	
+}
+
+profile duo {
+	output eDP-1 enable mode 1920x1080 position 1920,600 scale 1.25
+	output HDMI-A-1 enable mode 1920x1080 position 0,0 scale 1
+}

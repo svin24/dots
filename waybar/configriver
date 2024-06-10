@@ -3,12 +3,12 @@
     "position": "top",
     "height": 27,
     "modules-left": [
-        "hyprland/workspaces",
-//        "river/tags",
+//        "hyprland/workspaces",
+        "river/tags",
 //       "hyprland/submap",
-//       "river/mode",
-        "hyprland/window"
-//        "river/window"
+       "river/mode",
+//        "hyprland/window"
+        "river/window"
     ],
     "modules-center": [],
     "modules-right": [

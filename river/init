@@ -6,18 +6,22 @@
 # $XDG_CONFIG_HOME/river/init or $HOME/.config/river/init first.
 #
 # See the river(1), riverctl(1), and rivertile(1) man pages for complete
-wlr-randr --output eDP-1 --mode 1920x1080 --pos 0,0 --output HDMI-A-1 --mode 1920x1080 --pos -1920,-600
+#wlr-randr --output eDP-1 --mode 1920x1080 --pos 0,0 --output HDMI-A-1 --mode 1920x1080 --pos -1920,-600
+riverctl spawn "kanshi"
 riverctl spawn "dbus-update-activation-environment SEATD_SOCK DISPLAY WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=river"
 riverctl spawn "gnome-keyring-daemon --start --components=secrets"
 riverctl spawn "swww-daemon" 
 riverctl spawn "~/.config/scripts/swww-random ~/Wallpapers/"
-mako &
-waybar &
+riverctl spawn "waybar -c ~/.config/waybar/configriver"
+#riverctl spawn "creek"
+riverctl spawn "mako"
 
 # Note: the "Super" modifier is also known as Logo, GUI, Windows, Mod4, etc.
 riverctl map normal Super E spawn '~/.config/scripts/bemenu-run'
 riverctl map normal Super R spawn '~/.config/scripts/bemenu-drun'
 riverctl map normal Super Return spawn alacritty
+riverctl map normal None Print spawn 'grimshot copy area'
+riverctl map normal Super Print spawn 'grimshot copy screen'
 
 # Super+Q to close the focused view
 riverctl map normal Super Q close
@@ -101,7 +105,7 @@ done
 # Super+Shift+0 to tag focused view with all tags
 all_tags=$(((1 << 32) - 1))
 riverctl map normal Super 0 set-focused-tags $all_tags
-riverctl map normal Super+Shift 0 set-view-tags $all_tags
+riverctl map normal Super+Shift 0 sgrim -g "$(slurp -d)" - | wl-copyet-view-tags $all_tags
 
 # Super+Space to toggle float
 riverctl map normal Super Space toggle-float
@@ -125,7 +129,6 @@ riverctl map normal Super F11 enter-mode passthrough
 # Super+F11 to return to normal mode
 riverctl map passthrough Super F11 enter-mode normal
 
-riverctl map normal Print spawn 'grim -g "$(slurp -d)" - | wl-copy'
 
 # Various media key mapping examples for both normal and locked mode which do
 # not have a modifier
