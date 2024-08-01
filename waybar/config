@@ -79,7 +79,7 @@
     "pulseaudio": {
         "format": "[VOL {volume}%]",
         "format-muted": "[MUTED]",
-        "on-click": "pavucontrol",
+        "on-click": "pavucontrol-qt",
         "interval": 60
     }
 }

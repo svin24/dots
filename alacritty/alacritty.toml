@@ -1,26 +1,4 @@
-[colors.bright]
-black = "#908E8F"
-blue = "#FC9867"
-cyan = "#78DCE8"
-green = "#A9DC76"
-magenta = "#AB9DF2"
-red = "#FF6188"
-white = "#FDF9F3"
-yellow = "#FFD866"
-
-[colors.normal]
-black = "#363537"
-blue = "#FC9867"
-cyan = "#78DCE8"
-green = "#A9DC76"
-magenta = "#AB9DF2"
-red = "#FF6188"
-white = "#FDF9F3"
-yellow = "#FFD866"
-
-[colors.primary]
-background = "#363537"
-foreground = "#FDF9F3"
+import = ["~/.config/alacritty/monokaipro.toml"]
 
 [font]
 size = 11.0
@@ -42,4 +20,5 @@ family = "Hack"
 style = "Regular"
 
 [window]
-opacity = 1
+opacity = 0.90
+
