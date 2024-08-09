@@ -12,19 +12,17 @@ window#waybar {
 
 .modules-left {
 	background-color: #323232;
-	padding: 0px 0px 0px 0px;
+	/*padding: 0px 0px 0px 0px;*/
 }
 
 
 .modules-right {
 	background-color: #323232;
-	padding: 0px 0px 0px 0px;
+	/*padding: 0px 0px 0px 0px;*/
 }
 
 
-#workspaces {
-}
-
+/*
 #tags button {
 	padding: 0px 8px 0px 8px; 
 	color: #888888;
@@ -44,7 +42,11 @@ window#waybar {
      padding: 0px 8px 0px 8px;
      border: 1px solid #2f343a;
 }
+*/
 
+#workspaces {
+/*	padding: 0px 0px 0px 0px;*/
+}
 
 #workspaces button {
 	padding: 0px 8px 0px 8px; 
@@ -53,24 +55,28 @@ window#waybar {
 
 
 #workspaces button.active { 
-	padding: 0px 8px 0px 8px; 
 	background-color: #285577;
 	color: #FFFFFF;
+	border-radius: 0;
 }
 
-
+#workspaces button:hover {
+	border: 1px solid #FFFFFF;
+	border-radius: 0;
+}
+/*
 #submap { 
 	 background-color: #900000;
 	 color: #FFFFFF;
      padding: 0px 8px 0px 8px;
      border: 1px solid #2f343a;
 }
-
+*/
 
 #window {
 	 color: #FFFFFF;
 	 background-color: #285577;
-     padding: 0px 8px 0px 8px;
+     padding: 0px 0px 0px 8px;
 }
 
 
@@ -87,13 +93,12 @@ window#waybar.empty {
 #pulseaudio.bluetooth {
 	color: #3888FF
 }
-
- #backlight, #pulseudio, #battery , #tray {
+/* weird padding rules */
+#backlight, #pulseudio, #battery , #tray {
     padding: 0 8 0 8;
 }
-/* goofy ahhh waybar*/
-#power-profiles-daemon, #network{ padding: 0 0 0 8 }
-#clock{padding: 0 0 0 0 }
+#power-profiles-daemon, #idle_inhibitor,#language, #network{ padding: 0 0 0 8 }
+#clock{padding: 0 8 0 0 }
 
 #battery.critical {
    color: #ff5555;

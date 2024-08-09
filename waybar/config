@@ -13,9 +13,11 @@
     "modules-center": [],
     "modules-right": [
         "network",
+        "hyprland/language",
         "backlight",
         "pulseaudio",
         "power-profiles-daemon",
+        "idle_inhibitor",
         "battery",
         "clock",
         "tray"
@@ -61,6 +63,13 @@
             "power-saver": "SAV"
         }
     },
+    "idle_inhibitor": {
+                "format": "[Idle Block: {icon}]",
+                "format-icons": {
+                     "activated": "on",
+                     "deactivated": "off"
+                }
+           },
     "battery": {
         "format": "[BAT {capacity}%]",
         "format-full": "[Fully charged]",
@@ -81,6 +90,9 @@
         "format-muted": "[MUTED]",
         "on-click": "pavucontrol-qt",
         "interval": 60
+    },
+    "hyprland/language": {
+        "format": "[LANG:{short}]"
     }
 }
 // vi:ft=jsonc
