@@ -1,24 +1,24 @@
-import = ["~/.config/alacritty/monokaipro.toml"]
+import = ["~/.config/alacritty/nord.toml"]
 
 [font]
-size = 11.0
+size = 12.0
 
 [font.bold]
-family = "Hack"
+family = "Ubuntu Mono"
 style = "Bold"
 
 [font.bold_italic]
-family = "Hack"
+family = "Ubuntu Mono"
 style = "Bold Italic"
 
 [font.italic]
-family = "Hack"
+family = "Ubuntu Mono"
 style = "Italic"
 
 [font.normal]
-family = "Hack"
+family = "Ubuntu Mono"
 style = "Regular"
 
 [window]
-opacity = 0.90
+opacity = 1
 

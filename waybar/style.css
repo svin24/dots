@@ -1,37 +1,37 @@
 * {
-    font-family: "IBM Plex Font";
-    font-size: 16;
+    font-family: "Ubuntu Mono";
+    font-size: 13pt;
 }
 
 
 window#waybar { 
-    background-color: #225877; 
-    color: #FFFFFF;    
+    background-color: #4C566A; 
+    color: #ECEFF4;    
 }
 
 
 .modules-left {
-	background-color: #323232;
+	background-color: #2E3440;
 	/*padding: 0px 0px 0px 0px;*/
 }
 
 
 .modules-right {
-	background-color: #323232;
+	background-color: #2E3440;
 	/*padding: 0px 0px 0px 0px;*/
 }
 
 
 /*
 #tags button {
-	padding: 0px 8px 0px 8px; 
+	padding: 0px 6px 0px 6px; 
 	color: #888888;
 }
 
 
 #tags button.focused { 
-	padding: 0px 8px 0px 8px; 
-	background-color: #285577;
+	padding: 0px 6px 0px 6px; 
+	background-color: #4C566A;
 	color: #ffffff;
 }
 
@@ -39,7 +39,7 @@ window#waybar {
 #mode { 
 	 background-color: #900000;
 	 color: #ffffff;
-     padding: 0px 8px 0px 8px;
+     padding: 0px 6px 0px 6px;
      border: 1px solid #2f343a;
 }
 */
@@ -49,34 +49,34 @@ window#waybar {
 }
 
 #workspaces button {
-	padding: 0px 8px 0px 8px; 
-	color: #FFFFFF;
+	padding: 0px 6px 0px 6px; 
+	color: #ECEFF4;
 }
 
 
 #workspaces button.active { 
-	background-color: #285577;
-	color: #FFFFFF;
+	background-color: #4C566A;
+	color: #ECEFF4;
 	border-radius: 0;
 }
 
 #workspaces button:hover {
-	border: 1px solid #FFFFFF;
+	border: 1px solid #ECEFF4;
 	border-radius: 0;
 }
 /*
 #submap { 
 	 background-color: #900000;
-	 color: #FFFFFF;
-     padding: 0px 8px 0px 8px;
+	 color: #ECEFF4;
+     padding: 0px 6px 0px 6px;
      border: 1px solid #2f343a;
 }
 */
 
 #window {
-	 color: #FFFFFF;
-	 background-color: #285577;
-     padding: 0px 0px 0px 8px;
+	 color: #ECEFF4;
+	 background-color: #4C566A;
+     padding: 0px 0px 0px 6px;
 }
 
 
@@ -87,26 +87,26 @@ window#waybar.empty #window {
 
 
 window#waybar.empty {
-	background-color: #323232;
+	background-color: #2E3440;
 }
 
 #pulseaudio.bluetooth {
-	color: #3888FF
+	color: #88C0D0
 }
 /* weird padding rules */
 #backlight, #pulseudio, #battery , #tray {
-    padding: 0 8 0 8;
+    padding: 0px 6px 0px 6px;
 }
-#power-profiles-daemon, #idle_inhibitor,#language, #network{ padding: 0 0 0 8 }
-#clock{padding: 0 8 0 0 }
+#power-profiles-daemon, #idle_inhibitor,#language, #network{ padding: 0px 0px 0px 6px }
+#clock{padding: 0px 6px 0px 0px }
 
 #battery.critical {
-   color: #ff5555;
+   color: #BF616A;
 }
 
 
 #network.disconnected {
-    color: #ff5555;
+    color: #BF616A;
 }
 
 

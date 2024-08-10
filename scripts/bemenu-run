@@ -1,2 +1,2 @@
 #!/bin/sh
-bemenu-run -c -i --fork -l 10 -W 0.3 --single-instance --tf "#d0d0d0" --tb "#232323" --fb "#232323" --ff "#d0d0d0" --nb "#232323" --nf "#d0d0d0" --hb "#d0d0d0" --hf "#232323" --ab "#232323" --af "#d0d0d0" --cb "#d0d0d0" --fn "IBM Plex Mono 12"
+bemenu-run -c -i --fork -l 10 -W 0.3 --tf "#ECEFF4" --tb "#4C566A" --fb "#4C566A" --ff "#ECEFF4" --nb "#2E3440" --nf "#ECEFF4" --hb "#ECEFF4" --hf "#2E3440" --ab "#2E3440" --af "#ECEFF4" --cb "#ECEFF4" --fn "Ubuntu Mono 12"
