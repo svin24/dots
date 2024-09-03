@@ -119,7 +119,9 @@
     "on-click": "pavucontrol-qt",
   },
   "hyprland/language": {
-    "format": "[ {long}]",
+    "format": "[ {}]",
+    "format-en": "🇺🇸",
+    "format-gr": "🇬🇷",
     "tooltip": false,
   },
 }
