@@ -1,5 +1,5 @@
 * {
-    font-family: "Ubuntu Mono";
+    font-family: "IBM Plex Mono", "Font Awesome 6 Free", "Font Awesome 6 Brands";
     font-size: 13pt;
 }
 
@@ -100,10 +100,17 @@ window#waybar.empty {
 #power-profiles-daemon, #idle_inhibitor,#language, #network{ padding: 0px 0px 0px 6px }
 #clock{padding: 0px 6px 0px 0px }
 
+#battery.full{
+	color: #A3BE8C;
+}
+
+#battery.warning {
+	color: #EBCB8B;
+}
+
 #battery.critical {
    color: #BF616A;
 }
-
 
 #network.disconnected {
     color: #BF616A;

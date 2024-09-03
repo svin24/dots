@@ -1,3 +1,16 @@
+sort=-time
 default-timeout=5000
 font=IBM Plex Mono 11
+layer=overlay
 anchor=top-right
+background-color=#2E3440
+text-color=#ECEFF4
+border-color=#ECEFF4
+
+[urgency=low]
+border-color=#EBCB8B
+default-timeout=0
+
+[urgency=high]
+border-color=#BF616A
+default-timeout=0
