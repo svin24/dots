@@ -96,7 +96,7 @@
   },
   "network": {
     "format-ethernet": "[]",
-    "format-wifi": "[{signalStrength}% ]",
+    "format-wifi": "[ {signalStrength}%]",
     "format-disconnected": "[]",
     "tooltip-format": "{ifname} via {gwaddr}",
     "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
