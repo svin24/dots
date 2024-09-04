@@ -24,6 +24,7 @@ brightnessctl
 playerctl
 bluetuith
 pavucontrol-qt
+fontawesome(both free and brands)
 ```
 
 it may kinda work on river but i haven't tried it in a while.
