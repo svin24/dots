@@ -1,0 +1,28 @@
+# Colors (Nord light) theme based on https//github.com/nordtheme/alacritty/issues/28#issuecomment-1422225211
+
+# Default colors
+[colors.primary]
+background = '#ECEFF4'
+foreground = '#2E3440'
+
+# Normal colors
+[colors.normal]
+black   = '#434C5E'
+red     = '#bf616a'
+green   = '#a3be8c'
+yellow  = '#EBCB8B'
+blue    = '#5E81AC'
+magenta = '#B48EAD'
+cyan    = '#81A1C1'
+white   = '#D8DEE9'
+
+# Bright colors
+[colors.bright]
+black   = '#434C5E'
+red     = '#bf616a'
+green   = '#a3be8c'
+yellow  = '#EBCB8B'
+blue    = '#5E81AC'
+magenta = '#B48EAD'
+cyan    = '#81A1C1'
+white   = '#D8DEE9'

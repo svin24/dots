@@ -1,2 +1,13 @@
 #!/bin/sh
-j4-dmenu-desktop  --dmenu='bemenu -c -i --fork -l 10 -W 0.3 --tf "#ECEFF4" --tb "#4C566A" --fb "#4C566A" --ff "#ECEFF4" --nb "#2E3440" --nf "#ECEFF4" --hb "#ECEFF4" --hf "#2E3440" --ab "#2E3440" --af "#ECEFF4" --cb "#ECEFF4" --fn "Ubuntu Mono 12"'
+j4-dmenu-desktop  --dmenu='bemenu -i --single-instance --fork -H 26 --hp 8 --tf "#F5F5F5" \
+    --tb "#222222" \
+    --fb "#222222" \
+    --ff "#F5F5F5" \
+    --nb "#222222" \
+    --nf "#F5F5F5" \
+    --hb "#F5F5F5" \
+    --hf "#222222" \
+    --ab "#222222" \
+    --af "#F5F5F5" \
+    --cb "#F5F5F5" \
+    --fn "IBM Plex Mono 12"'

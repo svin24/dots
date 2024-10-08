@@ -46,11 +46,11 @@
       "on-scroll": 1,
       "on-click-right": "mode",
       "format": {
-        "months": "<span color='#A3BE8C'><b>{}</b></span>",
-        "days": "<span color='#B48EAD'><b>{}</b></span>",
-        "weeks": "<span color='#8FBCBB'><b>W{}</b></span>",
-        "weekdays": "<span color='#EBCB8B'><b>{}</b></span>",
-        "today": "<span color='#BF616A'><b><u>{}</u></b></span>",
+        "months": "<span color='#7B9246'><b>{}</b></span>",
+        "days": "<span color='#D0D0D0'><b>{}</b></span>",
+        "weeks": "<span color='#6C99BB'><b>W{}</b></span>",
+        "weekdays": "<span color='#D3A04D'><b>{}</b></span>",
+        "today": "<span color='#A53C23'><b><u>{}</u></b></span>",
       },
     },
     "actions": {
@@ -98,6 +98,7 @@
     "format-ethernet": "[]",
     "format-wifi": "[ {signalStrength}%]",
     "format-disconnected": "[]",
+    "on-click": "$CUR_TERMINAL -e nmtui",
     "tooltip-format": "{ifname} via {gwaddr}",
     "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
     "tooltip-format-ethernet": "{ifname} ",
@@ -112,11 +113,12 @@
   "pulseaudio": {
     "format": "[{icon} {volume}%]",
     "format-bluetooth": "[{icon} {volume}%]",
-    "format-muted": "",
+    "format-muted": "[ Muted]",
     "format-icons": {
       "default": ["", ""],
     },
     "on-click": "pavucontrol-qt",
+    "on-click-middle": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
   },
   "hyprland/language": {
     "format": "[ {}]",

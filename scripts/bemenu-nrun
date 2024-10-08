@@ -1,0 +1,13 @@
+#!/bin/sh
+bemenu-run  -i --fork --single-instance -H 26 --hp 8 --tf "#F5F5F5" \
+    --tb "#222222" \
+    --fb "#222222" \
+    --ff "#F5F5F5" \
+    --nb "#222222" \
+    --nf "#F5F5F5" \
+    --hb "#F5F5F5" \
+    --hf "#222222" \
+    --ab "#222222" \
+    --af "#F5F5F5" \
+    --cb "#F5F5F5" \
+    --fn "IBM Plex Mono 13"

@@ -9,7 +9,7 @@ host="$(hostname)"
 os="$(cat /etc/fedora-release)"
 kernel="$(uname -sr)"
 uptime="$(uptime -p | sed 's/up //')"
-packages="$(dnf list installed | sed '1d' | wc -l)"
+packages="$(dnf5 list --installed | sed '1d' | wc -l)"
 shell="$(basename "${SHELL}")"
 
 ## UI DETECTION

@@ -4,94 +4,55 @@
 }
 
 
-window#waybar { 
-    background-color: #4C566A; 
-    color: #ECEFF4;    
-}
+
 
 
 .modules-left {
-	background-color: #2E3440;
-	/*padding: 0px 0px 0px 0px;*/
+/*	background-color: #222222;*/
 }
 
 
 .modules-right {
-	background-color: #2E3440;
-	/*padding: 0px 0px 0px 0px;*/
+/*	background-color: #222222;*/
 }
-
-
-/*
-#tags button {
-	padding: 0px 6px 0px 6px; 
-	color: #888888;
-}
-
-
-#tags button.focused { 
-	padding: 0px 6px 0px 6px; 
-	background-color: #4C566A;
-	color: #ffffff;
-}
-
-
-#mode { 
-	 background-color: #900000;
-	 color: #ffffff;
-     padding: 0px 6px 0px 6px;
-     border: 1px solid #2f343a;
-}
-*/
 
 #workspaces {
-/*	padding: 0px 0px 0px 0px;*/
 }
 
 #workspaces button {
 	padding: 0px 6px 0px 6px; 
-	color: #ECEFF4;
+	color: #F5F5F5;
 }
 
 
 #workspaces button.active { 
-	background-color: #4C566A;
-	color: #ECEFF4;
+	background-color: #F5F5F5;
+	color: #505050;
 	border-radius: 0;
 }
 
 #workspaces button:hover {
-	border: 1px solid #ECEFF4;
+	border: 1px solid #F5F5F5;
 	border-radius: 0;
 }
-/*
-#submap { 
-	 background-color: #900000;
-	 color: #ECEFF4;
-     padding: 0px 6px 0px 6px;
-     border: 1px solid #2f343a;
-}
-*/
 
 #window {
-	 color: #ECEFF4;
-	 background-color: #4C566A;
+	 color: #F5F5F5;
+	 background-color: inherit;
+
      padding: 0px 0px 0px 6px;
 }
 
-
-window#waybar.empty #window {
-	background-color: transparent;
-	color: transparent;
+window#waybar { 
+    background-color: #222222; 
 }
 
-
 window#waybar.empty {
-	background-color: #2E3440;
+	background-color: #222222;
 }
 
 #pulseaudio.bluetooth {
-	color: #88C0D0
+	color: #6C99BB
 }
 /* weird padding rules */
 #backlight, #pulseudio, #battery , #tray {
@@ -101,19 +62,21 @@ window#waybar.empty {
 #clock{padding: 0px 6px 0px 0px }
 
 #battery.full{
-	color: #A3BE8C;
+	color: #7B9246;
+	background-color: inherit;
 }
 
 #battery.warning {
-	color: #EBCB8B;
+	color: #D3A04D;
+	background-color: inherit;
 }
 
 #battery.critical {
-   color: #BF616A;
+   color: #A53C23;
 }
 
 #network.disconnected {
-    color: #BF616A;
+    color: #A53C23;
 }
 
 
