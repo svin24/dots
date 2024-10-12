@@ -1,4 +1,4 @@
-import = ["~/.config/alacritty/afterglow.toml"]
+import = ["~/.config/alacritty/themes/base16_default_dark.toml"]
 
 [font]
 size = 12.0
