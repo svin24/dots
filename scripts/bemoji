@@ -34,7 +34,7 @@ declare -A default_pickers=(
     --cb "#F5F5F5" \
     --fn \"IBM Plex Mono 12\""
 	["wofi"]="wofi -p -i --show dmenu"
-	["rofi"]="rofi -p -i -dmenu --kb-custom-1 "Alt+1" --kb-custom-2 "Alt+2""
+	["rofi"]="rofi -p emoji -i -dmenu --kb-custom-1 "Alt+1" --kb-custom-2 "Alt+2""
 	["dmenu"]="dmenu -p -i -l 20"
 	["ilia"]="ilia -n -p textlist -l 'Emoji' -i desktop-magnifier"
 	["fuzzel"]="fuzzel -d -p ''"
