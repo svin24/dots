@@ -1,15 +1,15 @@
 * {
-    font-family: "IBM Plex Mono", "Font Awesome 6 Free", "Font Awesome 6 Brands";
-    font-size: 13pt;
+	font-family: "Noto Sans Mono";
+	font-size: 12pt;
 }
 
 .modules-left {
-/*	background-color: #181818;*/
+/*	background-color: #101010;*/
 }
 
 
 .modules-right {
-/*	background-color: #181818;*/
+/*	background-color: #101010;*/
 }
 
 #workspaces {
@@ -17,74 +17,98 @@
 
 #workspaces button {
 	padding: 0px 6px 0px 6px; 
-	color: #f8f8f8;
+	color: #ffffff;
+	background-color: #101010;
+	border-radius: 0;
 }
 
 
 #workspaces button.active { 
-	background-color: #f8f8f8;
-	color: #181818;
+	background-color: #227788;
+	color: #ffffff;
 	border-radius: 0;
 }
 
 #workspaces button:hover {
-	border: 1px solid #f8f8f8;
-	color: #f8f8f8;
+	border: 1px solid #ffffff;
+	color: #ffffff;
 	border-radius: 0;
 }
 
 #window {
-	color: #f8f8f8;
+	color: #ffffff;
 	background-color: inherit;
 	padding: 0px 0px 0px 6px;
 }
 
-window#waybar { 
-    background-color: #181818; 
+window#waybar {
+	background-color: #227788; 
 }
 
 window#waybar.empty {
-	background-color: #181818;
+	background-color: #101010;
+}
+
+/* weird padding rules */
+#backlight,
+#battery,
+#pulseaudio,
+#idle_inhibitor,
+#language,
+#network,
+#clock,
+#power-profiles-daemon{
+	padding: 0px 6px 0px 6px;
+	color: #ffffff;
+	background-color: #101010
+}
+#tray {
+	padding: 0px 0px 0px 6px;
+	background-color: #101010
 }
 
 #pulseaudio.bluetooth {
-	color: #7CAFC2;
-}
-#pulseaudio {
-	padding: 0px 0px 0px 0px;
-	color: #f8f8f8;
-}
-/* weird padding rules */
-#backlight, #battery, #tray {
-	padding: 0px 6px 0px 6px;
-	color: #f8f8f8;
-
-}
-#power-profiles-daemon, #idle_inhibitor,#language, #network{ 
-	padding: 0px 0px 0px 6px;
-	 color: #f8f8f8;
-}
-#clock{padding: 0px 6px 0px 0px;
-	 color: #f8f8f8;
+	color: #ffffff;
+	background-color: #227788;
 }
 
 #battery.full{
-	color: #A1B56C;
-	background-color: inherit;
+	color: #ffffff;
+	background-color: #227788;
 }
 
 #battery.warning {
-	color: #F7CA88;
-	background-color: inherit;
+	color: #ffffff;
+	background-color: #AA4422;
 }
 
 #battery.critical {
-   color: #AB4642;
+	color: #ffffff;
+	background-color: #880000;
 }
 
 #network.disconnected {
-    color: #AB4642;
+	color: #ffffff;
+	background-color: #880000;
+
 }
 
+#idle_inhibitor.activated {
+	color: #101010;
+	background-color: #ffffff;
+}
 
+#power-profiles-daemon.performance {
+	color: #ffffff;
+	background-color: #AA4422;
+}
 
+#power-profiles-daemon.power-saver {	
+	color: #ffffff;
+	background-color: #226633;
+}
+
+#pulseaudio.muted {
+	color: #ffffff;
+	background-color: #880000;
+}
