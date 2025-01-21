@@ -4,12 +4,12 @@
 }
 
 .modules-left {
-/*	background-color: #101010;*/
+/*	background-color: #181818;*/
 }
 
 
 .modules-right {
-/*	background-color: #101010;*/
+/*	background-color: #181818;*/
 }
 
 #workspaces {
@@ -17,36 +17,34 @@
 
 #workspaces button {
 	padding: 0px 6px 0px 6px; 
-	color: #ffffff;
-	background-color: #101010;
+	color: #f5f5f5;
+	background-color: #181818;
 	border-radius: 0;
 }
 
 
 #workspaces button.active { 
-	background-color: #227788;
-	color: #ffffff;
+	color: #ffdd33;
 	border-radius: 0;
 }
 
 #workspaces button:hover {
-	border: 1px solid #ffffff;
-	color: #ffffff;
+	border: 1px solid #ffdd33;
 	border-radius: 0;
 }
 
 #window {
-	color: #ffffff;
+	color: #f5f5f5;
 	background-color: inherit;
 	padding: 0px 0px 0px 6px;
 }
 
 window#waybar {
-	background-color: #227788; 
+	background-color: #181818; 
 }
 
 window#waybar.empty {
-	background-color: #101010;
+	background-color: #181818;
 }
 
 /* weird padding rules */
@@ -59,56 +57,46 @@ window#waybar.empty {
 #clock,
 #power-profiles-daemon{
 	padding: 0px 6px 0px 6px;
-	color: #ffffff;
-	background-color: #101010
+	color: #f5f5f5;
+	background-color: #181818
 }
 #tray {
 	padding: 0px 0px 0px 6px;
-	background-color: #101010
+	background-color: #181818
 }
 
 #pulseaudio.bluetooth {
-	color: #ffffff;
-	background-color: #227788;
+	color: #73d836;
 }
 
 #battery.full{
-	color: #ffffff;
-	background-color: #227788;
+	color: #73d836;
 }
 
 #battery.warning {
-	color: #ffffff;
-	background-color: #AA4422;
+	color: #ffdd33;
 }
 
 #battery.critical {
-	color: #ffffff;
-	background-color: #880000;
+	color: #f43841;
 }
 
 #network.disconnected {
-	color: #ffffff;
-	background-color: #880000;
-
+	color: #f43841;
 }
 
 #idle_inhibitor.activated {
-	color: #101010;
-	background-color: #ffffff;
+	color: #f43841;
 }
 
 #power-profiles-daemon.performance {
-	color: #ffffff;
-	background-color: #AA4422;
+	color: #ffdd33;
 }
 
 #power-profiles-daemon.power-saver {	
-	color: #ffffff;
-	background-color: #226633;
+	color: #73d936;
 }
 
 #pulseaudio.muted {
-	color: #ffffff;
-	background-color: #880000;
+	color: #f43841;
 }
