@@ -20,7 +20,7 @@
     "tray",
   ],
   "hyprland/workspaces": {
-    "format": "{name}",
+    "format": "{id}",
   },
   "hyprland/submap": {
     "format": "{}",
