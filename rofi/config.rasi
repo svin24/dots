@@ -155,5 +155,5 @@ font: "Noto Sans Mono 12";
   }
 }
 
-@theme "base16"
+@theme "theme"
 
