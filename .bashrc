@@ -1,6 +1,7 @@
 # .bashrc
 prompt_color_force=1
-export PS1="\[\033[01;31m\]bee\[\033[01;34m\] \w \$\[\033[00m\] "
+#export PS1="\[\033[01;31m\]bee\[\033[01;34m\] \w \$\[\033[00m\] "
+
 # Source global definitions
 if [ -f /etc/bashrc ]; then
     . /etc/bashrc
@@ -11,10 +12,9 @@ if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]; then
     PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 fi
 export GOPATH="$HOME/.go"
-export BUN_INSTALL="$HOME/.bun"
-. "/home/john/.deno/env"
-. "$HOME/.cargo/env"
-PATH=$BUN_INSTALL/bin:$PATH
+PATH="$PATH:/home/john/.deno/bin"
+PATH="$PATH:$HOME/.cargo/bin"
+PATH="$PATH:$HOME/.bun/bin"
 PATH="$PATH:$GOPATH/bin"
 PATH="$PATH:$HOME/.npm-global/bin/"
 PATH="$PATH:/var/lib/flatpak/exports/bin/"
