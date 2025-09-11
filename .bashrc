@@ -1,6 +1,4 @@
 # .bashrc
-prompt_color_force=1
-#export PS1="\[\033[01;31m\]bee\[\033[01;34m\] \w \$\[\033[00m\] "
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
