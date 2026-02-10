@@ -3,15 +3,15 @@ default-timeout=5000
 font=Noto Sans Mono 11
 layer=overlay
 anchor=top-right
-background-color=#181818
-text-color=#f5f5f5
-border-color=#f5f5f5
+background-color=#222222
+text-color=#bbbbbb
+border-color=#444444
 border-size=1
 
 [urgency=low]
-border-color=#73d936
+border-color=#88b090
 default-timeout=0
 
 [urgency=high]
-border-color=#f43841
+border-color=#cc6666
 default-timeout=0
