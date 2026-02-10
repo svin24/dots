@@ -1,15 +1,15 @@
 * {
-	font-family: "Noto Sans Mono";
+	font-family: "monospace";
 	font-size: 10pt;
 }
 
 .modules-left {
-/*	background-color: #181818;*/
+/*	background-color: #222222;*/
 }
 
 
 .modules-right {
-/*	background-color: #181818;*/
+/*	background-color: #222222;*/
 }
 
 #workspaces {
@@ -17,41 +17,42 @@
 
 #workspaces button {
 	padding: 0px 6px 0px 6px; 
-	color: #f5f5f5;
-	background-color: #181818;
+	color: #bbbbbb;
+	background-color: #222222;
 	border-radius: 0;
 }
 
 
 #workspaces button.active {
-	border-top: 1px solid #181818;
-	border-right: 1px solid #181818;
-	border-left: 1px solid #181818;
-	border-bottom: 2px solid #f5f5f5;
-	color: #f5f5f5;
-	border-radius: 0;
-}
-
-#workspaces button:hover {
-	border-top: 1px dotted #181818;
-	border-right: 1px dotted #181818;
-	border-left: 1px dotted #181818;
-	border-bottom: 2px dotted #f5f5f5;
+	color: #eeeeee;
+	background-color: #005577;
 	border-radius: 0;
 }
 
 #window {
-	color: #f5f5f5;
+	color: #bbbbbb;
 	background-color: inherit;
 	padding: 0px 0px 0px 6px;
 }
 
 window#waybar {
-	background-color: #181818; 
+	background-color: #222222; 
 }
 
 window#waybar.empty {
-	background-color: #181818;
+	background-color: #222222;
+}
+
+tooltip {
+	background-color: #222222;
+	color: #bbbbbb;
+	border: 1px solid #444444;
+	border-radius: 0;
+	padding: 6px;
+}
+
+tooltip label {
+	color: #bbbbbb;
 }
 
 /* weird padding rules */
@@ -64,46 +65,46 @@ window#waybar.empty {
 #clock,
 #power-profiles-daemon{
 	padding: 0px 6px 0px 6px;
-	color: #f5f5f5;
-	background-color: #181818
+	color: #bbbbbb;
+	background-color: #222222
 }
 #tray {
 	padding: 0px 0px 0px 6px;
-	background-color: #181818
+	background-color: #222222
 }
 
 #pulseaudio.bluetooth {
-	color: #73d836;
+	color: #88b090;
 }
 
 #battery.full{
-	color: #73d836;
+	color: #88b090;
 }
 
 #battery.warning {
-	color: #ffdd33;
+	color: #d0a36b;
 }
 
 #battery.critical {
-	color: #f43841;
+	color: #cc6666;
 }
 
 #network.disconnected {
-	color: #f43841;
+	color: #cc6666;
 }
 
 #idle_inhibitor.activated {
-	color: #f43841;
+	color: #cc6666;
 }
 
 #power-profiles-daemon.performance {
-	color: #ffdd33;
+	color: #d0a36b;
 }
 
 #power-profiles-daemon.power-saver {	
-	color: #73d936;
+	color: #88b090;
 }
 
 #pulseaudio.muted {
-	color: #f43841;
+	color: #cc6666;
 }
