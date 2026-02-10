@@ -21,17 +21,17 @@ bm_private_mode=${BEMOJI_PRIVATE_MODE:-false}
 bm_limit_recent="$BEMOJI_LIMIT_RECENT"
 
 declare -A default_pickers=(
-	["bemenu"]="bemenu -p emoji: -i --single-instance --fork -H 26 --hp 8 --tf "#F5F5F5" \
+	["bemenu"]="bemenu -p emoji: -c -i --single-instance --fork -l 10 -W 0.3 --tf "#bbbbbb" \
     --tb "#222222" \
     --fb "#222222" \
-    --ff "#F5F5F5" \
+    --ff "#bbbbbb" \
     --nb "#222222" \
-    --nf "#F5F5F5" \
-    --hb "#F5F5F5" \
-    --hf "#222222" \
+    --nf "#bbbbbb" \
+    --hb "#005577" \
+    --hf "#eeeeee" \
     --ab "#222222" \
-    --af "#F5F5F5" \
-    --cb "#F5F5F5" \
+    --af "#bbbbbb" \
+    --cb "#444444" \
     --fn \"IBM Plex Mono 12\""
 	["wofi"]="wofi -p -i --show dmenu"
 	["rofi"]="rofi -p emoji -i -dmenu --kb-custom-1 "Alt+1" --kb-custom-2 "Alt+2""

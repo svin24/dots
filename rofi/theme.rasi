@@ -3,14 +3,14 @@
  * Rofi version: 1.7.5+wayland3
  **/
 * {
-    foreground:                 #F8F8F8;
-    background:                 #181818;
-    red:                        #AB4642;    
-    blue:                       #7CAFC2;
+    foreground:                 #bbbbbb;
+    background:                 #222222;
+    red:                        #cc6666;    
+    blue:                       #005577;
     
-    separatorcolor:              var(foreground);
+    separatorcolor:              #444444;
     background-color:            var(background);
-    border-color:                var(foreground);
+    border-color:                transparent;
     spacing:                     2;
 
 
@@ -53,8 +53,8 @@ element normal.active {
 }
 */
 element selected.normal {
-    background-color: @foreground;
-    text-color:       @background;
+    background-color: #005577;
+    text-color:       #eeeeee;
 }
 /*
 element selected.urgent {
@@ -82,7 +82,7 @@ element-icon {
 window {
     padding:          5;
     background-color: @background;
-    border:           2;
+    border:           0;
 }
 mainbox {
     padding: 0;
@@ -90,8 +90,8 @@ mainbox {
 }
 message {
     padding:      1px ;
-    border-color: var(separatorcolor);
-    border:       2px dash 0px 0px ;
+    border-color: transparent;
+    border:       0;
 }
 textbox {
     text-color: var(foreground);
@@ -99,10 +99,10 @@ textbox {
 listview {
     padding:      2px 0px 0px ;
     scrollbar:    true;
-    border-color: @separatorcolor;
+    border-color: transparent;
     spacing:      2px ;
     fixed-height: 0;
-    border:       2px dash 0px 0px ;
+    border:       0;
 }
 scrollbar {
     width:        4px ;
@@ -112,8 +112,8 @@ scrollbar {
     handle-color: var(foreground);
 }
 sidebar {
-    border-color: var(separatorcolor);
-    border:       2px dash 0px 0px ;
+    border-color: transparent;
+    border:       0;
 }
 button {
     cursor:     pointer;

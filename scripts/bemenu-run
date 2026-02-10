@@ -1,2 +1,2 @@
 #!/bin/sh
-bemenu-run -c -i --fork -l 10 -W 0.3 --tf "#ECEFF4" --tb "#4C566A" --fb "#4C566A" --ff "#ECEFF4" --nb "#2E3440" --nf "#ECEFF4" --hb "#ECEFF4" --hf "#2E3440" --ab "#2E3440" --af "#ECEFF4" --cb "#ECEFF4" --fn "Ubuntu Mono 12"
+bemenu-run -c -i --fork -l 10 -W 0.3 --tf "#bbbbbb" --tb "#222222" --fb "#222222" --ff "#bbbbbb" --nb "#222222" --nf "#bbbbbb" --hb "#005577" --hf "#eeeeee" --ab "#222222" --af "#bbbbbb" --cb "#444444" --fn "Ubuntu Mono 12"
