@@ -1,1 +1,140 @@
-/nix/store/hqw7s5qpg1fbdlaj1xrr3czj0xkzpcv9-home-manager-files/.config/waybar/config
+[
+  {
+    "backlight": {
+      "format": "DIS:{percent}%",
+      "format-icons": [
+        "",
+        ""
+      ],
+      "interval": 60,
+      "tooltip": false
+    },
+    "battery": {
+      "format": "BAT:{capacity}%",
+      "format-charging": "CHARGE:{capacity}%",
+      "format-full": "BAT:FULL",
+      "format-icons": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "interval": 30,
+      "states": {
+        "critical": 10,
+        "warning": 30
+      },
+      "tooltip": true,
+      "tooltip-format": "Power draw: {power}W, Time: {time}, Health: {health}%",
+      "tooltip-format-full": "Fully charged"
+    },
+    "clock": {
+      "actions": {
+        "on-click-backward": "tz_down",
+        "on-click-forward": "tz_up",
+        "on-click-right": "mode",
+        "on-scroll-down": "shift_down",
+        "on-scroll-up": "shift_up"
+      },
+      "calendar": {
+        "format": {
+          "days": "<span>{}</span>",
+          "months": "<span>{}</span>",
+          "today": "<span background='#005577' foreground='#eeeeee'><b>{}</b></span>",
+          "weekdays": "<span>{}</span>",
+          "weeks": "<span>W{}</span>"
+        },
+        "mode": "year",
+        "mode-mon-col": 3,
+        "on-click-right": "mode",
+        "on-scroll": 1,
+        "weeks-pos": "right"
+      },
+      "format": "{:%d/%m %H:%M}",
+      "interval": 30,
+      "tooltip-format": "<span background='#222222' foreground='#bbbbbb'><tt><small>{calendar}</small></tt></span>"
+    },
+    "height": 26,
+    "hyprland/language": {
+      "format": "KEY:{}",
+      "format-en": "EN",
+      "format-gr": "GR",
+      "tooltip": false
+    },
+    "hyprland/submap": {
+      "format": "{}",
+      "max-length": 8,
+      "tooltip": false
+    },
+    "hyprland/window": {
+      "format": "{}",
+      "max-length": 150
+    },
+    "hyprland/workspaces": {
+      "format": "{id}"
+    },
+    "idle_inhibitor": {
+      "format": "IDLE:{icon}",
+      "format-icons": {
+        "activated": "OFF",
+        "deactivated": "ON"
+      },
+      "tooltip": true
+    },
+    "layer": "top",
+    "modules-center": [],
+    "modules-left": [
+      "hyprland/workspaces",
+      "hyprland/window"
+    ],
+    "modules-right": [
+      "network",
+      "hyprland/language",
+      "backlight",
+      "pulseaudio",
+      "power-profiles-daemon",
+      "idle_inhibitor",
+      "battery",
+      "clock",
+      "tray"
+    ],
+    "network": {
+      "format-disconnected": "NO NET",
+      "format-ethernet": "ETH",
+      "format-wifi": "WIFI:{signalStrength}%",
+      "on-click": "$CUR_TERMINAL -e nmtui",
+      "tooltip-format": "{ifname} via {gwaddr}",
+      "tooltip-format-disconnected": "Disconnected",
+      "tooltip-format-ethernet": "{ifname}",
+      "tooltip-format-wifi": "{essid} ({signalStrength}%)"
+    },
+    "position": "top",
+    "power-profiles-daemon": {
+      "format": "{icon}",
+      "format-icons": {
+        "balanced": "BAL",
+        "default": "DEF",
+        "performance": "PWR",
+        "power-saver": "SAV"
+      }
+    },
+    "pulseaudio": {
+      "format": "SND:{volume}%",
+      "format-bluetooth": "SND:{volume}%",
+      "format-icons": {
+        "default": [
+          "",
+          ""
+        ]
+      },
+      "format-muted": "NO SND",
+      "on-click": "pavucontrol-qt",
+      "on-click-middle": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+    },
+    "tray": {
+      "icon-size": 16,
+      "spacing": 8
+    }
+  }
+]

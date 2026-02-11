@@ -1,1 +1,108 @@
-/nix/store/hqw7s5qpg1fbdlaj1xrr3czj0xkzpcv9-home-manager-files/.config/waybar/style.css
+* {
+	font-family: "monospace";
+	font-size: 10pt;
+}
+
+.modules-left {
+/*	background-color: #222222;*/
+}
+
+.modules-right {
+/*	background-color: #222222;*/
+}
+
+#workspaces {
+}
+
+#workspaces button {
+	padding: 0px 6px 0px 6px;
+	color: #bbbbbb;
+	background-color: #222222;
+	border-radius: 0;
+}
+
+#workspaces button.active {
+	color: #eeeeee;
+	background-color: #005577;
+	border-radius: 0;
+}
+
+#window {
+	color: #bbbbbb;
+	background-color: inherit;
+	padding: 0px 0px 0px 6px;
+}
+
+window#waybar {
+	background-color: #222222;
+}
+
+window#waybar.empty {
+	background-color: #222222;
+}
+
+tooltip {
+	background-color: #222222;
+	color: #bbbbbb;
+	border: 1px solid #444444;
+	border-radius: 0;
+	padding: 6px;
+}
+
+tooltip label {
+	color: #bbbbbb;
+}
+
+/* weird padding rules */
+#backlight,
+#battery,
+#pulseaudio,
+#idle_inhibitor,
+#language,
+#network,
+#clock,
+#power-profiles-daemon {
+	padding: 0px 6px 0px 6px;
+	color: #bbbbbb;
+	background-color: #222222
+}
+#tray {
+	padding: 0px 0px 0px 6px;
+	background-color: #222222
+}
+
+#pulseaudio.bluetooth {
+	color: #88b090;
+}
+
+#battery.full {
+	color: #88b090;
+}
+
+#battery.warning {
+	color: #d0a36b;
+}
+
+#battery.critical {
+	color: #cc6666;
+}
+
+#network.disconnected {
+	color: #cc6666;
+}
+
+#idle_inhibitor.activated {
+	color: #cc6666;
+}
+
+#power-profiles-daemon.performance {
+	color: #d0a36b;
+}
+
+#power-profiles-daemon.power-saver {
+	color: #88b090;
+}
+
+#pulseaudio.muted {
+	color: #cc6666;
+}
