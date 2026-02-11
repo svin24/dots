@@ -1,5 +1,3 @@
-general.import = ["~/.config/alacritty/gruber-darker.toml"]
-
 [env]
 TERM = "xterm-256color"
 
@@ -26,3 +24,37 @@ style = "Regular"
 opacity = 1
 padding = { x = 6, y = 2 }
 blur = false
+
+[colors.primary]
+background = "#222222"
+foreground = "#bbbbbb"
+bright_foreground = "#eeeeee"
+dim_foreground = "#bbbbbb"
+
+[colors.cursor]
+text = "#222222"
+cursor = "#eeeeee"
+
+[colors.selection]
+text = "#222222"
+background = "#444444"
+
+[colors.normal]
+black = "#222222"
+red = "#cc6666"
+green = "#88b090"
+yellow = "#d0a36b"
+blue = "#005577"
+magenta = "#cc6666"
+cyan = "#88b090"
+white = "#bbbbbb"
+
+[colors.bright]
+black = "#444444"
+red = "#cc6666"
+green = "#88b090"
+yellow = "#d0a36b"
+blue = "#005577"
+magenta = "#d0a36b"
+cyan = "#88b090"
+white = "#eeeeee"
