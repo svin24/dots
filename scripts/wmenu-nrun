@@ -1,0 +1,2 @@
+#!/bin/sh
+wmenu-run -i -p "run:" -N 222222 -n bbbbbb -M 222222 -m bbbbbb -S 005577 -s eeeeee

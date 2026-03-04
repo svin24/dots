@@ -10,6 +10,18 @@ bm_db_location=${BEMOJI_DB_LOCATION:-"${XDG_DATA_HOME:-$HOME/.local/share}/bemoj
 bm_state_dir="${BEMOJI_HISTORY_LOCATION:-${XDG_STATE_HOME:-$HOME/.local/state}}"
 bm_history_file="${bm_state_dir}/bemoji-history.txt"
 
+# wmenu defaults (overridable via env)
+bm_wmenu_prompt=${BEMOJI_WMENU_PROMPT:-"emoji:"}
+bm_wmenu_lines=${BEMOJI_WMENU_LINES:-10}
+bm_wmenu_normal_bg=${BEMOJI_WMENU_NORMAL_BG:-"222222"}
+bm_wmenu_normal_fg=${BEMOJI_WMENU_NORMAL_FG:-"bbbbbb"}
+bm_wmenu_prompt_bg=${BEMOJI_WMENU_PROMPT_BG:-"222222"}
+bm_wmenu_prompt_fg=${BEMOJI_WMENU_PROMPT_FG:-"bbbbbb"}
+bm_wmenu_select_bg=${BEMOJI_WMENU_SELECT_BG:-"005577"}
+bm_wmenu_select_fg=${BEMOJI_WMENU_SELECT_FG:-"eeeeee"}
+bm_wmenu_font=${BEMOJI_WMENU_FONT:-""}
+bm_wmenu_output=${BEMOJI_WMENU_OUTPUT:-""}
+
 # Command to run after user chooses an emoji
 bm_default_cmd="$BEMOJI_DEFAULT_CMD"
 
@@ -21,18 +33,8 @@ bm_private_mode=${BEMOJI_PRIVATE_MODE:-false}
 bm_limit_recent="$BEMOJI_LIMIT_RECENT"
 
 declare -A default_pickers=(
-	["bemenu"]="bemenu -p emoji: -c -i --single-instance --fork -l 10 -W 0.3 --tf "#bbbbbb" \
-    --tb "#222222" \
-    --fb "#222222" \
-    --ff "#bbbbbb" \
-    --nb "#222222" \
-    --nf "#bbbbbb" \
-    --hb "#005577" \
-    --hf "#eeeeee" \
-    --ab "#222222" \
-    --af "#bbbbbb" \
-    --cb "#444444" \
-    --fn \"IBM Plex Mono 12\""
+	["wmenu"]="_wmenu_picker"
+	["bemenu"]='bemenu -p emoji: -c -i --single-instance --fork -l 10 -W 0.3 --tf bbbbbb --tb 222222 --fb 222222 --ff bbbbbb --nb 222222 --nf bbbbbb --hb 005577 --hf eeeeee --ab 222222 --af bbbbbb --cb 444444 --fn "IBM Plex Mono 12"'
 	["wofi"]="wofi -p -i --show dmenu"
 	["rofi"]="rofi -p emoji -i -dmenu --kb-custom-1 "Alt+1" --kb-custom-2 "Alt+2""
 	["dmenu"]="dmenu -p -i -l 20"
@@ -40,11 +42,13 @@ declare -A default_pickers=(
 	["fuzzel"]="fuzzel -d -p ''"
 )
 
+picker_order=(wmenu bemenu wofi rofi dmenu ilia fuzzel)
+
 # Report usage
 usage() {
 	echo "Usage: $(basename "$0") [-t | -c | -e] [-f <filepath> ] [-p] [-P] [-D <choices>]" 1>&2
 	echo
-	echo "A simple emoji picker. Runs on bemenu/wofi/rofi/dmenu by default."
+	echo "A simple emoji picker. Runs on wmenu/bemenu/wofi/rofi/dmenu by default."
 	echo "Invoked without arguments sends the picked emoji to the clipboard."
 	echo
 	echo " Command options (can be combined):"
@@ -272,6 +276,20 @@ _typer() {
 }
 
 # Set default picker util
+_wmenu_picker() {
+	local args=(-i -l "$bm_wmenu_lines" -p "$bm_wmenu_prompt" -N "$bm_wmenu_normal_bg" -n "$bm_wmenu_normal_fg" -M "$bm_wmenu_prompt_bg" -m "$bm_wmenu_prompt_fg" -S "$bm_wmenu_select_bg" -s "$bm_wmenu_select_fg")
+
+	if [ -n "$bm_wmenu_font" ]; then
+		args+=(-f "$bm_wmenu_font")
+	fi
+
+	if [ -n "$bm_wmenu_output" ]; then
+		args+=(-o "$bm_wmenu_output")
+	fi
+
+	wmenu "${args[@]}"
+}
+
 _picker() {
     if [ -n "$BEMOJI_PICKER_CMD" ]; then
         # shellcheck disable=SC2068
@@ -279,7 +297,7 @@ _picker() {
 		return
 	fi
 
-	for tool in "${!default_pickers[@]}"; do
+	for tool in "${picker_order[@]}"; do
 		if command -v "$tool" >/dev/null 2>&1; then
 			${default_pickers[$tool]}
 			return

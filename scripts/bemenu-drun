@@ -1,5 +1,7 @@
 #!/bin/sh
-j4-dmenu-desktop  --dmenu='bemenu -c -i --single-instance --fork -l 10 -W 0.3 --tf "#bbbbbb" \
+j4-dmenu-desktop  --dmenu='bemenu -c -i --single-instance --fork -l 10 -W 0.3 \
+	  --scrollbar autohide \
+	  --tf "#bbbbbb" \
     --tb "#222222" \
     --fb "#222222" \
     --ff "#bbbbbb" \
@@ -10,4 +12,4 @@ j4-dmenu-desktop  --dmenu='bemenu -c -i --single-instance --fork -l 10 -W 0.3 --
     --ab "#222222" \
     --af "#bbbbbb" \
     --cb "#444444" \
-    --fn "IBM Plex Mono 12"'
+    --fn "monospace 10"'

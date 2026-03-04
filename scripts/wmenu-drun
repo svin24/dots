@@ -1,0 +1,2 @@
+#!/bin/sh
+j4-dmenu-desktop --dmenu='wmenu -i -l 10 -p "run:" -N 222222 -n bbbbbb -M 222222 -m bbbbbb -S 005577 -s eeeeee'
