@@ -1,6 +1,7 @@
 #!/bin/sh
-j4-dmenu-desktop  --dmenu='bemenu -c -i --single-instance --fork -l 10 -W 0.3 \
-	  --scrollbar autohide \
+j4-dmenu-desktop  --dmenu='bemenu -c -i --single-instance --fork\
+    --prompt "drun:"\
+	  -l 10 -W 0.3\
 	  --tf "#bbbbbb" \
     --tb "#222222" \
     --fb "#222222" \

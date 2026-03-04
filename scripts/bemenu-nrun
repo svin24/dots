@@ -1,5 +1,8 @@
 #!/bin/sh
-bemenu-run  -c -i --fork --single-instance -l 10 -W 0.3 --tf "#bbbbbb" \
+bemenu-run -c -i --single-instance --fork\
+    --prompt "run:"\
+	  -l 10 -W 0.3\
+		--tf "#bbbbbb" \
     --tb "#222222" \
     --fb "#222222" \
     --ff "#bbbbbb" \
